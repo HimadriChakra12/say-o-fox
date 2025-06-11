@@ -122,19 +122,11 @@
 }
 
 #navigator-toolbox {
-  background-color: #1d2021 !important;
-  color: #ebdbb2 !important;
-}
-
-.tabbrowser-tab[selected="true"] {
-  background-color: #282828 !important;
-  color: #ebdbb2 !important;
-}
-
-#TabsToolbar, #nav-bar {
-  background-color: #1d2021 !important;
+  background: none !important;
   border: none !important;
+  z-index: unset !important;
 }
+
 .browser-toolbar {
   border: none !important;
 }
