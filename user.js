@@ -21,15 +21,6 @@ user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.ping-centre.telemetry", false);
 
-// Fingerprinting Defense
-user_pref("webgl.disabled", false);
-user_pref("media.peerconnection.enabled", true);   // For some story sharing logic
-user_pref("media.navigator.enabled", true);        // For camera/audio access if needed
-user_pref("media.video_stats.enabled", false);
-user_pref("dom.battery.enabled", false);
-user_pref("geo.enabled", false);
-user_pref("device.sensors.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 // Performance Tweaks
 user_pref("browser.sessionstore.interval", 300000);
@@ -55,9 +46,9 @@ user_pref("network.prefetch-next", false);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.predictor.enabled", false);
 user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
-user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false);
+user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", true);
 user_pref("browser.urlbar.groupLabels.enabled", false);
-user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.urlbar.suggest.history", true);
 user_pref("layout.css.prefers-color-scheme.content-override", 2); // 2 = dark
 
 // Optional: Enable GPU Acceleration
@@ -92,9 +83,6 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("dom.push.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("permissions.default.desktop-notification", 2);
-
-// ✂️ Reduce image decode workload
-user_pref("image.mem.decode_bytes_at_a_time", 32768);
 
 // 💾 Don't cache disk (for SSD/memory-bound systems)
 user_pref("browser.cache.disk.enable", false);
