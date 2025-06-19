@@ -1,5 +1,5 @@
 // Privacy & Tracking
-user_pref("privacy.resistFingerprinting", true);
+user_pref("privacy.resistFingerprinting", false);
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 user_pref("privacy.donottrackheader.enabled", true);
@@ -22,9 +22,9 @@ user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.ping-centre.telemetry", false);
 
 // Fingerprinting Defense
-user_pref("webgl.disabled", true);
-user_pref("media.peerconnection.enabled", false);
-user_pref("media.navigator.enabled", false);
+user_pref("webgl.disabled", false);
+user_pref("media.peerconnection.enabled", true);   // For some story sharing logic
+user_pref("media.navigator.enabled", true);        // For camera/audio access if needed
 user_pref("media.video_stats.enabled", false);
 user_pref("dom.battery.enabled", false);
 user_pref("geo.enabled", false);
