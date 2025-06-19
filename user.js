@@ -28,8 +28,6 @@ user_pref("browser.cache.disk.enable", false);
 user_pref("browser.cache.memory.enable", true);
 user_pref("browser.cache.memory.capacity", 262144); // 256MB
 user_pref("browser.tabs.unloadOnLowMemory", true);
-user_pref("media.memory_cache_max_size", 512000); // 500MB
-user_pref("image.mem.decode_bytes_at_a_time", 65536);
 user_pref("dom.ipc.processCount", 4);
 user_pref("ui.prefersReducedMotion", 1);
 user_pref("layout.spellcheckDefault", 0);
@@ -60,10 +58,6 @@ user_pref("dom.ipc.processCount", 2); // 2 content processes
 user_pref("network.prefetch-next", false);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.predictor.enabled", false);
-
-// 🔄 Limit memory cache
-user_pref("browser.cache.memory.capacity", 131072); // ~128MB
-user_pref("media.memory_cache_max_size", 262144);   // 256MB for media
 
 // 🧹 Auto-unload tabs when low on memory
 user_pref("browser.tabs.unloadOnLowMemory", true);
